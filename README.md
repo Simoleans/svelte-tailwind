@@ -17,7 +17,9 @@ npm install
 ## Usage
 
 ```sh
-npm run build-css:develop
+
+npm run build-tailwind:dev
+
 npm run dev
 ```
 
