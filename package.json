@@ -2,7 +2,7 @@
   "name": "svelte-tailwind",
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c && cross-env NODE_ENV=production tailwindcss build index.css -o public/css/main.css",
     "dev": "rollup -c -w",
     "start": "sirv public",
     "build-tailwind:dev": "npx tailwindcss build index.css -o public/css/main.css",
@@ -11,6 +11,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^16.0.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
+    "cross-env": "^7.0.3",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.0.0",
     "rollup-plugin-livereload": "^2.0.0",
