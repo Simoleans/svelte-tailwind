@@ -18,10 +18,17 @@ npm install
 
 ```sh
 npm run build-tailwind:dev
+
 npm run dev
 ```
+## Build production
 
-## Author
+```sh
+npm run build
+
+```
+
+## Author (del template)
 
 * Website: https://simoleans.github.io/CV/
 * Twitter: [@futFran](https://twitter.com/futFran)
